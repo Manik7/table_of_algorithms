@@ -3,7 +3,7 @@
 The notation is inspired by Haskell, but it is not consistent across the entire table.
 All information is provided as is, please verify it yourself.
 
-| Name           | Signature                  | Upper Bound | Family     | Aliases    | Comments |
+| Name           | Function_Signature         | Upper Bound | Family     | Aliases    | Comments |
 | :---           | :---                       | :---        | :---       | :---       | :---     |
 | copy if        | f int int [c] -> [c]       | O(n)        | copy       |            | various definitions exist with pointers, iterators, and integers |
 | copy           |   [a]         -> [a]       | O(n)        | copy       |            | `copy        A := copy_if TRUE 0 (size A) A` |
