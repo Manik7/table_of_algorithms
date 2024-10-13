@@ -1,6 +1,7 @@
 # Table of algorithms
 
-The notation is inspired by Haskell, but it is not consistent across the entire table.
+The notation is inspired by Haskell, but omits currying.
+The notation is not fully consistent across the entire table.
 All information is provided as is, please verify it yourself.
 
 | Name           | Function_Signature         | Upper Bound | Family     | Aliases    | Comments |
