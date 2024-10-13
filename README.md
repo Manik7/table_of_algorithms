@@ -7,7 +7,7 @@ All information is provided as is, please verify it yourself.
 | :---           | :---                       | :---        | :---       | :---       | :---     |
 | copy if        | f int int [c] -> [c]       | O(n)        | copy       |            | various definitions exist with pointers, iterators, and integers |
 | copy           |   [a]         -> [a]       | O(n)        | copy       |            | `copy        A := copy_if TRUE 0 (size A) A` |
-| filter         | f [a]         -> [a]       | O(n)        | copy       | copy if    | `filter    F A   := copy_if F 0 (size A) A` |
+| filter         | f [a]         -> [a]       | O(n)        | copy       | copy if    | `filter    F A := copy_if F 0 (size A) A` |
 | take           |   int [b]     -> [b]       | O(n)        | copy       |            | `take      i A := copy 0 i B`|
 | take last      |   int [b]     -> [b]       | O(n)        | copy       |            | `take_last i A := copy (size B)-i (size B) B`       |
 | drop           |   int [b]     -> [b]       | O(n)        | copy       |            | `drop      i A := copy i (size B) B`       |
@@ -26,5 +26,5 @@ All information is provided as is, please verify it yourself.
 | inclusive scan | f  a  [b]     -> [a]       | O(n)        | scan       |            | |
 | exclusive scan | f  a  [b]     -> [a]       | O(n)        | scan       |            | |
 | find           | f [a]         -> int       | O(n)        | find       |            | |
-| contains       | f [a]         -> bool      | O(n)        | find       |            | typically returns ptr instead of int, `contains F A   := (find F A) != (size A)` |
+| contains       | f [a]         -> bool      | O(n)        | find       |            | typically returns ptr instead of int, `contains F A := (find F A) != (size A)` |
 | mismatch       | f [a] [b]     -> (int,int) | O(n)        | find       |            | typically returns (ptr, ptr) instead of (int, int), `mismatch  F A B := find F (zip A B)` |
