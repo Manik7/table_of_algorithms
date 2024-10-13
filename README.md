@@ -19,6 +19,8 @@ All information is provided as is, please verify it yourself.
 | reduce         | f  a  [b]     ->  a        | O(n)        | reduce     |            | args: binary op, accumulator init, sequence |
 | fold left      | f  a  [b]     ->  a        | O(n)        | reduce     | accumulate | |
 | fold right     | f  a  [b]     ->  a        | O(n)        | reduce     |            | `fold_right := fold_left (reverse B)` |
+| map reduce     |f g a  [b]     ->  a        | O(n)        | reduce     |inner product| note that in C++ f and g are reversed; `map_reduce f g init B   := reduce g init (map f B)` |
+| map reduce (binary)| f g a  [b] [c] ->  a   | O(n)        | reduce     |inner product| note that in C++ f and g are reversed; `map_reduce f g init B C := reduce g init (map f (zip A B)` |
 | fill           |    a          -> [a]       | O(n)        | scan       |            | |
 | iota           |    a   a      -> [a]       | O(n)        | scan       |            | |
 | inclusive scan | f  a  [b]     -> [a]       | O(n)        | scan       |            | |
