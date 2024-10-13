@@ -22,8 +22,8 @@ All information is provided as is, please verify it yourself.
 | fold right     | f  a  [b]     ->  a        | O(n)        | reduce     |            | `fold_right := fold_left (reverse B)` |
 | map reduce     |f g a  [b]     ->  a        | O(n)        | reduce     |inner product| note that in C++ f and g are reversed; `map_reduce f g init B   := reduce g init (map f B)` |
 | map reduce (binary)| f g a  [b] [c] ->  a   | O(n)        | reduce     |inner product| note that in C++ f and g are reversed; `map_reduce f g init B C := reduce g init (map f (zip A B)` |
-| fill           |    a          -> [a]       | O(n)        | scan       |            | |
-| iota           |    a   a      -> [a]       | O(n)        | scan       |            | |
+| fill           |    a          -> [a]       | O(n)        | copy, scan |            | |
+| iota           |    a   a      -> [a]       | O(n)        | copy, scan |            | |
 | inclusive scan | f  a  [b]     -> [a]       | O(n)        | scan       |            | |
 | exclusive scan | f  a  [b]     -> [a]       | O(n)        | scan       |            | |
 | find           | f [a]         -> int       | O(n)        | find       |            | |
